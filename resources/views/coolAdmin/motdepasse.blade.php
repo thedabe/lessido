@@ -10,28 +10,28 @@
     <meta name="keywords" content="au theme template">
 
     <!-- Title Page-->
-    <title>Forget Password</title>
+    <title>mot de passe oublié</title>
 
     <!-- Fontfaces CSS-->
-    <link href="{{asset('css/font-face.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('vendor/font-awesome-4.7/css/font-awesome.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('vendor/font-awesome-5/css/fontawesome-all.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('vendor/mdi-font/css/material-design-iconic-font.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('coolAdmin/css/font-face.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('coolAdmin/vendor/font-awesome-4.7/css/font-awesome.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('coolAdmin/vendor/font-awesome-5/css/fontawesome-all.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('coolAdmin/vendor/mdi-font/css/material-design-iconic-font.min.css')}}" rel="stylesheet" media="all">
 
     <!-- Bootstrap CSS-->
-    <link href="{{asset('vendor/bootstrap-4.1/bootstrap.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('coolAdmin/vendor/bootstrap-4.1/bootstrap.min.css')}}" rel="stylesheet" media="all">
 
     <!-- Vendor CSS-->
-    <link href="{{asset('vendor/animsition/animsition.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('vendor/wow/animate.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('vendor/css-hamburgers/hamburgers.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('vendor/slick/slick.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('vendor/select2/select2.min.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('vendor/perfect-scrollbar/perfect-scrollbar.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('coolAdmin/vendor/animsition/animsition.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('coolAdmin/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('coolAdmin/vendor/wow/animate.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('coolAdmin/vendor/css-hamburgers/hamburgers.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('coolAdmin/vendor/slick/slick.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('coolAdmin/vendor/select2/select2.min.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('coolAdmin/vendor/perfect-scrollbar/perfect-scrollbar.css')}}" rel="stylesheet" media="all">
 
     <!-- Main CSS-->
-    <link href="{{asset('css/theme.css')}}" rel="stylesheet" media="all">
+    <link href="{{asset('coolAdmin/css/theme.css')}}" rel="stylesheet" media="all">
 
 </head>
 
@@ -43,7 +43,7 @@
                     <div class="login-content">
                         <div class="login-logo">
                             <a href="#">
-                                <img src="{{('images/icon/logo.png')}}" alt="CoolAdmin">
+                                <img src="{{('coolAdmin/images/icon/logo.png')}}" alt="CoolAdmin">
                             </a>
                         </div>
                         <div class="login-form">
@@ -84,7 +84,7 @@
     </script>
 
     <!-- Main JS-->
-    <script src="{{asset('js/main.js')}}"></script>
+    <script src="{{asset('coolAdmin/js/main.js')}}"></script>
 
 </body>
 

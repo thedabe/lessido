@@ -167,7 +167,7 @@ if(!$_SESSION["nom"]){
                                             <img src="{{('coolAdmin/images/icon/avatar-01.jpg')}}" alt="John Doe" />
                                         </div>
                                         <div class="content">
-                                            <a class="js-acc-btn" href="#"><?php echo $_SESSION["nom"]; ?></a>
+                                            <a class="js-acc-btn" href="#"></a>
                                         </div>
                                         <div class="account-dropdown js-dropdown">
                                             <div class="info clearfix">
@@ -178,9 +178,9 @@ if(!$_SESSION["nom"]){
                                                 </div>
                                                 <div class="content">
                                                     <h5 class="name">
-                                                        <a href="#"><?php echo $_SESSION["nom"]; ?></a>
+                                                        <a href="#"></a>
                                                     </h5>
-                                                    <span class="email"><?php echo $_SESSION["email"]; ?></span>
+                                                    <span class="email"></span>
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__body">

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\clientcontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,3 +25,10 @@ Route::get('/dashboardAdmin', function () {
 Route::get('/pageconnexion', function () {
     return view('pageconnexion');
 });
+
+
+Route::get('/motdepasse', function () {
+    return view('coolAdmin/motdepasse');
+});
+Route::post('/commander/ajouter',[clientcontroller::class,'commander_ajouter']);
+Route::post('/candidater/lessidos',[clientcontroller::class,'candidater']);
