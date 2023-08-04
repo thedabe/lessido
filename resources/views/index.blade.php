@@ -458,7 +458,7 @@ https://templatemo.com/tm-581-kind-heart-charity
 
                     <div class="col-lg-6 col-12">
                         <h2 class="text-white mb-4">Candidat</h2>
-                        <form class="custom-form volunteer-form mb-5 mb-lg-0" action="/candidater/lessidos" method="post" role="form">
+                        <form class="custom-form volunteer-form mb-5 mb-lg-0" action="/candidater/lessidos" method="post" role="form"  enctype="multipart/form-data">
                             <h3 class="mb-4">Devenir Employé chez LESSIDO</h3>
                             @if (session('status2'))
                             <div class="alert alert-sucess">
@@ -466,6 +466,12 @@ https://templatemo.com/tm-581-kind-heart-charity
                             </div>
                             @endif
                             @csrf
+                            @foreach($errors->All() as $error)
+                            <div class="alert alert-sucess">
+                                {{$error}}
+                            </div>
+                            @endforeach
+
                             <div class="row">
                                 <div class="col-lg-6 col-12">
                                     <input type="text" name="nom_lessidos" id="nom_lessidos" class="form-control" placeholder="nom" required>
