@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\clientcontroller;
+use App\Http\Controllers\authcontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,6 +41,5 @@ Route::get('/motdepasse', function () {
 });
 Route::post('/commander/ajouter',[clientcontroller::class,'commander_ajouter']);
 Route::post('/candidater/lessidos',[clientcontroller::class,'candidater']);
-Route::post('/faire/password',[clientcontroller::class,'passwordclient']);
-
+Route::post('/faire/password',[authcontroller::class,'passwordclient']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

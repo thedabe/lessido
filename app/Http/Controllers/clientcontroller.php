@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\client;
 use App\Models\lessidos;
 use App\Models\commande;
-use Illuminate\Support\Facades\Auth;
+
 
 class clientcontroller extends Controller
 {
@@ -70,30 +70,5 @@ class clientcontroller extends Controller
         }
         return redirect('index')->with('status2','veuillez patienté le temps d\analyser votre dossier.');
         
-      }
-
-      public function passwordclient(Request $request){
-        if (Auth::check()) {
-          $utilisateur = Auth::client();
-  
-          // Maintenant vous pouvez accéder aux propriétés de l'utilisateur
-          $contact = $utilisateur->contact_client;
-          $request->validate([
-            'password'=> 'required',
-            'repass'=> 'required',
-          ]);
-          $nouveaucode='password';
-          $confirmcode='repass';
-      if ($nouveaucode== $confirmcode ) {
-        $code = client::where('contact_client', '==', $contact)
-        ->update(['code' => $nouveaucode]);
-        return redirect('dashboardclient')->with('status3','Retenez bien ce code pour vous connecter.');
-  
-      } 
-      else{
-        return redirect('passconnexion')->with('status4','mot de passe différent.');
-      }
-      }
-       
       }
 }
